@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 100px 90vh;
+}
+
+.article {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #1d30c1;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
+  grid-template-rows: 80px auto;
+}
+
+.navLeft {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: #E8F8FF;
+}
+
+.navRight {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-color: #E8F8FF;
+}
+
+.header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #3399CC;
+}
+
+.btnGeneral {
+  background-color: #67B8DE;
+  height: 70px;
+  border: thin solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  background-color: #569DBF;
+}
+
+#btnForum {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#btnLogin {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #67B8DE;
+}
+
+#btnLogout {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-color: #67B8DE;
+}
+
+#logInField {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  background-color: #67B8DE;
+}
+
+#logoutButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 70px;
+  width: 215px;
+}
+
+.content {
+  grid-column: 1/5;
+  grid-row: 2/3;
+  background-color: #91C9E8;
+}
